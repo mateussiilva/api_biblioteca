@@ -32,8 +32,7 @@ def id_in_dict(id: str, dict: dict ) -> bool:
 if __name__ == "__main__":
     pyjson = PyJson("utf-8")
     dados_json = pyjson.readjson("models/base.json", "r")
-    # pyjson.writejson("teste.json",dados_json)  
-    id = "5"
-    print(id_in_dict(id,dados_json))
+    titulos = tuple(map(lambda id: dados_json[id]["titulo"] ,dados_json))
+    print(titulos)
     
       

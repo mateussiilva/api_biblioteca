@@ -1,5 +1,5 @@
-from flask import Flask,request,jsonify
-from main import PyJson, id_in_dict
+from flask import Flask,jsonify, render_template
+from main import PyJson 
 
 
 app = Flask(__name__)
@@ -13,7 +13,8 @@ def home():
 
 @app.route("/livros",methods=["GET"])
 def quantidade_livros():
-    return f"{len(livros)} Livros cadastrados"
+    titulos = tuple(map(lambda id: livros[id]["titulo"],livros))
+    return f"{titulos}"
 
 
 
