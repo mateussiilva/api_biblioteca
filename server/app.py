@@ -1,15 +1,15 @@
-from flask import Flask,jsonify, render_template
+from flask import Flask, render_template
 from main import PyJson 
 
 
 app = Flask(__name__)
 pyjson = PyJson("utf-8")
-livros = pyjson.readjson("models/base.json")
+livros = pyjson.readjson("../models/base.json")
 
 @app.route("/",methods=["GET"])
 def home():
     # return jsonify(livros)
-    return livros
+    return render_template("index.html")
 
 
 @app.route("/livros",methods=["GET"])
