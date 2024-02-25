@@ -1,27 +1,6 @@
-{
-    "1": {
+ {
         "autor": "Júlio Verne",
         "titulo": "A volta ao mundo em 80 dias",
         "paginas": 0
-    },
-    "2": {
-        "autor": "Júlio Verne",
-        "titulo": "Viagem ao centro da Terra",
-        "paginas": 0
-    },
-    "3": {
-        "autor": "Júlio Verne",
-        "titulo": "Da Terra à Lua",
-        "paginas": 0
-    },
-    "4": {
-        "autor": "Júlio Verne",
-        "titulo": "A ilha misteriosa",
-        "paginas": 0
-    },
-    "5": {
-        "autor": "Júlio Verne",
-        "titulo": "Dois anos de férias",
-        "paginas": 0
     }
-}
+
